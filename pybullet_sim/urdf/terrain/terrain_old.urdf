@@ -1,0 +1,37 @@
+<?xml version="1.0" ?>
+<robot name="terrain">
+  <link name="world" />
+  <link name="terrainLink">
+    <contact>
+      <rolling_friction value="0.03"/>
+      <spinning_friction value="0.03"/>
+    </contact>
+	
+    <inertial>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+       <mass value="10.0"/>
+       <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
+    </inertial>
+    <visual>
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+		<mesh filename="./terrain.obj" scale="0.3 0.3 0.3"/>
+      </geometry>
+       <material name="red">
+        <color rgba="1 0 0 1"/>
+      </material>
+    </visual>
+		<collision concave="yes">
+      <origin rpy="0 0 0" xyz="0 0 0"/>
+      <geometry>
+		<mesh filename="./terrain.obj" scale="0.3 0.3 0.3"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="ground_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="world" />
+    <child link="ground_link" />
+  </joint>
+</robot>
+

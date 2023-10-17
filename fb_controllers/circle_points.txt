@@ -1,0 +1,48 @@
+DON'T FORGET TO DIVIDE 1000 FOR REAL VALUE
+
+point1 coordinates:
+x=3230
+z=369
+
+point2 coordinates:
+x=4609
+z=-1010
+
+
+point3 coordinates:
+x=3230
+z=-2388
+
+########################################
+
+point1 coordinates:
+x=3370
+z=739
+
+point2 coordinates:
+x=5005
+z=-896
+
+
+point3 coordinates:
+x=3370
+z=-2531
+
+##################################
+
+point1 coordinates:
+x=122
+z=226
+
+point2 coordinates:
+x=4975
+z=-200
+
+
+point3 coordinates:
+x=7625
+z=-2600
+
+
+################################
+
